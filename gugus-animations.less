@@ -1,0 +1,23 @@
+.animReveal(@animDelay: 0.3, @animDuration: 0.3, @animCount: 1, @animFuncion: ease-in) {
+  -webkit-animation: showMe @animDuration*1s @animCount;
+  -moz-animation:    showMe @animDuration*1s @animCount;
+  -o-animation:      showMe @animDuration*1s @animCount;
+  animation:         showMe @animDuration*1s @animCount;
+  -webkit-animation-timing-function: @animFuncion;
+  -moz-animation-timing-function: @animFuncion;
+  -o-animation-timing-function: @animFuncion;
+  animation-timing-function: @animFuncion;
+  -webkit-animation-delay: @animDelay*1s;
+  -moz-animation-delay: @animDelay*1s;
+  -o-animation-delay: @animDelay*1s;
+  animation-delay: @animDelay*1s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.someSelector {
+  .animReveal(2);
+}
