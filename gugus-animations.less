@@ -1,3 +1,15 @@
+@keyframes showMe {
+  0%   {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// The Smaller the Number the faster the whole animation
+@animAmplifier: 0.5;
+
 .animReveal(@animDelay: 0.3, @animDuration: 0.3, @animCount: 1, @animFuncion: ease-in) {
   -webkit-animation: showMe @animDuration*1s @animCount;
   -moz-animation:    showMe @animDuration*1s @animCount;
